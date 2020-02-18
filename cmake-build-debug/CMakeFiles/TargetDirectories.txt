@@ -1,0 +1,3 @@
+C:/Users/benav/CLionProjects/EDDPractica1/cmake-build-debug/CMakeFiles/EDDPractica1.dir
+C:/Users/benav/CLionProjects/EDDPractica1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/benav/CLionProjects/EDDPractica1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

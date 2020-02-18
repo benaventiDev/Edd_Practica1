@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="EDDPractica1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/benav/CLionProjects/EDDPractica1/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EDDPractica1">
+				<Option output="C:/Users/benav/CLionProjects/EDDPractica1/build/EDDPractica1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/benav/CLionProjects/EDDPractica1/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 EDDPractica1"/>
+					<CompileFile command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="EDDPractica1/fast">
+				<Option output="C:/Users/benav/CLionProjects/EDDPractica1/build/EDDPractica1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/benav/CLionProjects/EDDPractica1/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++/backward"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../include"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/include-fixed"/>
+					<Add directory="C:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/4.9.2/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 EDDPractica1/fast"/>
+					<CompileFile command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/benav/CLionProjects/EDDPractica1/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/benav/CLionProjects/EDDPractica1/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/benav/CLionProjects/EDDPractica1/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/circularLinkedList.cpp">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/circularLinkedList.h">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/doubleLinkedList.cpp">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/doubleLinkedList.h">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/linkedList.cpp">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/linkedList.h">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/node.cpp">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/node.h">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/queue.cpp">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/queue.h">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/stack.cpp">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/stack.h">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/Buffer.cpp">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/Buffer.h">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.cpp">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.h">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/buffer.h">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/main.cpp">
+			<Option target="EDDPractica1"/>
+		</Unit>
+		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
