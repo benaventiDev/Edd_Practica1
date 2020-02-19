@@ -69,87 +69,9 @@ CMakeFiles/EDDPractica1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/main.cpp.s"
 	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\main.cpp -o CMakeFiles\EDDPractica1.dir\main.cpp.s
 
-CMakeFiles/EDDPractica1.dir/edd/linkedList.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
-CMakeFiles/EDDPractica1.dir/edd/linkedList.cpp.obj: ../edd/linkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EDDPractica1.dir/edd/linkedList.cpp.obj"
-	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\edd\linkedList.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\edd\linkedList.cpp
-
-CMakeFiles/EDDPractica1.dir/edd/linkedList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDDPractica1.dir/edd/linkedList.cpp.i"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\benav\CLionProjects\EDDPractica1\edd\linkedList.cpp > CMakeFiles\EDDPractica1.dir\edd\linkedList.cpp.i
-
-CMakeFiles/EDDPractica1.dir/edd/linkedList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/edd/linkedList.cpp.s"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\edd\linkedList.cpp -o CMakeFiles\EDDPractica1.dir\edd\linkedList.cpp.s
-
-CMakeFiles/EDDPractica1.dir/edd/node.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
-CMakeFiles/EDDPractica1.dir/edd/node.cpp.obj: ../edd/node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EDDPractica1.dir/edd/node.cpp.obj"
-	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\edd\node.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\edd\node.cpp
-
-CMakeFiles/EDDPractica1.dir/edd/node.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDDPractica1.dir/edd/node.cpp.i"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\benav\CLionProjects\EDDPractica1\edd\node.cpp > CMakeFiles\EDDPractica1.dir\edd\node.cpp.i
-
-CMakeFiles/EDDPractica1.dir/edd/node.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/edd/node.cpp.s"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\edd\node.cpp -o CMakeFiles\EDDPractica1.dir\edd\node.cpp.s
-
-CMakeFiles/EDDPractica1.dir/edd/doubleLinkedList.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
-CMakeFiles/EDDPractica1.dir/edd/doubleLinkedList.cpp.obj: ../edd/doubleLinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EDDPractica1.dir/edd/doubleLinkedList.cpp.obj"
-	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\edd\doubleLinkedList.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\edd\doubleLinkedList.cpp
-
-CMakeFiles/EDDPractica1.dir/edd/doubleLinkedList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDDPractica1.dir/edd/doubleLinkedList.cpp.i"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\benav\CLionProjects\EDDPractica1\edd\doubleLinkedList.cpp > CMakeFiles\EDDPractica1.dir\edd\doubleLinkedList.cpp.i
-
-CMakeFiles/EDDPractica1.dir/edd/doubleLinkedList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/edd/doubleLinkedList.cpp.s"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\edd\doubleLinkedList.cpp -o CMakeFiles\EDDPractica1.dir\edd\doubleLinkedList.cpp.s
-
-CMakeFiles/EDDPractica1.dir/edd/circularLinkedList.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
-CMakeFiles/EDDPractica1.dir/edd/circularLinkedList.cpp.obj: ../edd/circularLinkedList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EDDPractica1.dir/edd/circularLinkedList.cpp.obj"
-	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\edd\circularLinkedList.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\edd\circularLinkedList.cpp
-
-CMakeFiles/EDDPractica1.dir/edd/circularLinkedList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDDPractica1.dir/edd/circularLinkedList.cpp.i"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\benav\CLionProjects\EDDPractica1\edd\circularLinkedList.cpp > CMakeFiles\EDDPractica1.dir\edd\circularLinkedList.cpp.i
-
-CMakeFiles/EDDPractica1.dir/edd/circularLinkedList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/edd/circularLinkedList.cpp.s"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\edd\circularLinkedList.cpp -o CMakeFiles\EDDPractica1.dir\edd\circularLinkedList.cpp.s
-
-CMakeFiles/EDDPractica1.dir/edd/queue.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
-CMakeFiles/EDDPractica1.dir/edd/queue.cpp.obj: ../edd/queue.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/EDDPractica1.dir/edd/queue.cpp.obj"
-	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\edd\queue.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\edd\queue.cpp
-
-CMakeFiles/EDDPractica1.dir/edd/queue.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDDPractica1.dir/edd/queue.cpp.i"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\benav\CLionProjects\EDDPractica1\edd\queue.cpp > CMakeFiles\EDDPractica1.dir\edd\queue.cpp.i
-
-CMakeFiles/EDDPractica1.dir/edd/queue.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/edd/queue.cpp.s"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\edd\queue.cpp -o CMakeFiles\EDDPractica1.dir\edd\queue.cpp.s
-
-CMakeFiles/EDDPractica1.dir/edd/stack.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
-CMakeFiles/EDDPractica1.dir/edd/stack.cpp.obj: ../edd/stack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EDDPractica1.dir/edd/stack.cpp.obj"
-	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\edd\stack.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\edd\stack.cpp
-
-CMakeFiles/EDDPractica1.dir/edd/stack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDDPractica1.dir/edd/stack.cpp.i"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\benav\CLionProjects\EDDPractica1\edd\stack.cpp > CMakeFiles\EDDPractica1.dir\edd\stack.cpp.i
-
-CMakeFiles/EDDPractica1.dir/edd/stack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/edd/stack.cpp.s"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\edd\stack.cpp -o CMakeFiles\EDDPractica1.dir\edd\stack.cpp.s
-
 CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
 CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj: ../editor/Buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj"
 	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\editor\Buffer.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\editor\Buffer.cpp
 
 CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.i: cmake_force
@@ -162,7 +84,7 @@ CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.s: cmake_force
 
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: ../editor/Editor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj"
 	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\editor\Editor.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\editor\Editor.cpp
 
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.i: cmake_force
@@ -176,12 +98,6 @@ CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.s: cmake_force
 # Object files for target EDDPractica1
 EDDPractica1_OBJECTS = \
 "CMakeFiles/EDDPractica1.dir/main.cpp.obj" \
-"CMakeFiles/EDDPractica1.dir/edd/linkedList.cpp.obj" \
-"CMakeFiles/EDDPractica1.dir/edd/node.cpp.obj" \
-"CMakeFiles/EDDPractica1.dir/edd/doubleLinkedList.cpp.obj" \
-"CMakeFiles/EDDPractica1.dir/edd/circularLinkedList.cpp.obj" \
-"CMakeFiles/EDDPractica1.dir/edd/queue.cpp.obj" \
-"CMakeFiles/EDDPractica1.dir/edd/stack.cpp.obj" \
 "CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj" \
 "CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj"
 
@@ -189,12 +105,6 @@ EDDPractica1_OBJECTS = \
 EDDPractica1_EXTERNAL_OBJECTS =
 
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/main.cpp.obj
-EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/edd/linkedList.cpp.obj
-EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/edd/node.cpp.obj
-EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/edd/doubleLinkedList.cpp.obj
-EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/edd/circularLinkedList.cpp.obj
-EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/edd/queue.cpp.obj
-EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/edd/stack.cpp.obj
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/build.make
@@ -202,7 +112,7 @@ EDDPractica1.exe: C:/MinGW64/x86_64-w64-mingw32/include/pdcurs36/wincon/pdcurses
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/linklibs.rsp
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/objects1.rsp
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable EDDPractica1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable EDDPractica1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EDDPractica1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

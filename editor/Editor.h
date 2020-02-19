@@ -8,6 +8,7 @@
 class Editor
 {
 private:
+    int currentPos;
     int x, y;
     char mode;
     Buffer* buff;
@@ -33,10 +34,12 @@ public:
 
     char getMode() {return mode;}
 
+    void handleInput1(int);
     void handleInput(int);              // Handles keyboard input
     void printBuff();
     void printStatusLine();             // Prints the status line (like vim!!!)
     void updateStatus();                // Updates the status line (text, not display)
+    void printBuff1();    //TODO: DELETE
 };
 
 #endif

@@ -8,7 +8,12 @@ using namespace std;
 
 Editor::Editor()
 {
-    x=0;y=0;mode='n';
+    currentPos = 0;
+
+
+
+    //Not my code
+    x=0;y=0;mode='i';
     status = "Normal Mode";
     filename = "untitled";
 
@@ -70,44 +75,18 @@ string Editor::tos(int i)
     return ss.str();
 }
 
-void Editor::handleInput(int c)
+void Editor::handleInput(int c){
+    buff->addCharAt(currentPos, char(c));
+    currentPos++;
+
+}
+
+
+void Editor::handleInput1(int c)
 {
+    //TODO: Handle right, left, up and down.
+
     switch(c)
-    {
-        case KEY_LEFT:
-            moveLeft();
-            return;
-        case KEY_RIGHT:
-            moveRight();
-            return;
-        case KEY_UP:
-            moveUp();
-            return;
-        case KEY_DOWN:
-            moveDown();
-            return;
-    }
-    switch(mode)
-    {
-        case 'n':
-            switch(c)
-            {
-                case 'x':
-                    // Press 'x' to exit
-                    mode = 'x';
-                    break;
-                case 'i':
-                    // Press 'i' to enter insert mode
-                    mode = 'i';
-                    break;
-                case 's':
-                    // Press 's' to save the current file
-                    saveFile();
-                    break;
-            }
-            break;
-        case 'i':
-            switch(c)
             {
                 case 0x0013:// CTRL + S
                     break;
@@ -184,8 +163,7 @@ void Editor::handleInput(int c)
                     x++;
                     break;
             }
-            break;
-    }
+
 }
 
 void Editor::moveLeft()
@@ -217,21 +195,40 @@ void Editor::moveUp()
 
 void Editor::moveDown()
 {
-    if(y+1 < LINES-1 && y+1 < buff->lines.size())
+    if(y+1 < LINES-1 && y+1 < buff->lines.size()) // LINES is /* terminal height */
         y++;
     if(x >= buff->lines[y].length())
         x = buff->lines[y].length();
     move(y, x);
 }
+void Editor::printBuff() {
+    /*This go over screen line by screen line. Screen line is not a real line,
+     * is just how many lines are being displayed in the screen */
+    string* lines = buff->getLines();
 
-void Editor::printBuff()
+    for (int i = 0; i < LINES - 1; i++){ // LINES is /* terminal height */
+        if(i >= buff->getLinesCounter()) // If there are remaining lines in the screen, not being used by the text editor
+        {
+            move(i, 0);
+            clrtoeol(); // Erase the current line to the right of the cursor.
+        } else{ // Here is where I print the actual lines.
+            mvprintw(i, 0, lines[i].c_str());
+        }
+        clrtoeol();
+    }
+
+    move(y, x);
+
+}
+
+void Editor::printBuff1() //TODO: Delete
 {
-    for(int i=0; i<LINES-1; i++)
+    for(int i=0; i<LINES-1; i++) // LINES is /* terminal height */
     {
         if(i >= buff->lines.size())
         {
             move(i, 0);
-            clrtoeol();
+            clrtoeol(); // Erase the current line to the right of the cursor.
         }
         else
         {

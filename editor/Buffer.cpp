@@ -1,6 +1,9 @@
 #include "Buffer.h"
 
-Buffer::Buffer() {}
+Buffer::Buffer() {
+    mainText = new doubleLinkedList<char>();
+    newLineCounter = 1;
+}
 
 string Buffer::remTabs(string line)
 {
@@ -25,6 +28,58 @@ void Buffer::appendLine(string line)
 
 void Buffer::removeLine(int n)
 {
-    lines.erase(lines.begin()+n); // remove line at certain position
+    lines.erase(lines.begin()+n); // remove line at certain positioni
 }
+
+
+
+void Buffer::addCharAt( int index, char c){
+    mainText->addAt(&c, index);
+}
+
+
+
+int Buffer::getTextSize(){
+    return mainText->getSize();
+}
+
+string Buffer::getLine(int lineNumber){
+    mainText->begin();
+    string line = "";
+    while(mainText->hasNext()){
+        line.append(mainText->next());
+    }
+
+    return line;
+}
+
+int Buffer::getLinesCounter(){
+    return newLineCounter;
+}
+
+string* Buffer::getLines(){
+    string lines[newLineCounter];
+    string line = "";
+    int counter = 0;
+    mainText->begin();
+
+
+        while(mainText->hasNext()){
+            if(*mainText->next() == '\n'){
+                lines[counter] = line;
+                counter++;
+            } else{
+                line += *mainText->next();
+            }
+        }
+
+
+}
+
+
+
+
+
+
+
 

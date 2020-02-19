@@ -82,37 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/circularLinkedList.cpp">
-			<Option target="EDDPractica1"/>
-		</Unit>
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/circularLinkedList.h">
-			<Option target="EDDPractica1"/>
-		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/doubleLinkedList.cpp">
 			<Option target="EDDPractica1"/>
 		</Unit>
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/doubleLinkedList.h">
 			<Option target="EDDPractica1"/>
 		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/linkedList.cpp">
-			<Option target="EDDPractica1"/>
-		</Unit>
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/linkedList.h">
-			<Option target="EDDPractica1"/>
-		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/node.cpp">
 			<Option target="EDDPractica1"/>
 		</Unit>
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/node.h">
 			<Option target="EDDPractica1"/>
 		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/queue.cpp">
-			<Option target="EDDPractica1"/>
-		</Unit>
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/queue.h">
-			<Option target="EDDPractica1"/>
-		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/stack.cpp">
 			<Option target="EDDPractica1"/>
 		</Unit>
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/stack.h">
