@@ -17,9 +17,9 @@ namespace edd{
         doubleLinkedList<T> *llist;
     public:
         stack();
-        void push(T*);
-        T* pop();
-        T* peek();
+        void push(T);
+        T pop();
+        T peek();
         bool isEmpty();
         int getSize();
 
@@ -35,7 +35,7 @@ edd::stack<T>::stack(){//LIFO
 }
 
 template <typename T>
-T* edd::stack<T>::pop(){
+T edd::stack<T>::pop(){
     if(llist->getSize()==0){
         return nullptr;
     }
@@ -45,12 +45,12 @@ T* edd::stack<T>::pop(){
 }
 
 template <typename T>
-void edd::stack<T>::push(T* data){
+void edd::stack<T>::push(T data){
     llist->addLast(data);
 }
 
 template <typename T>
-T* edd::stack<T>::peek(){
+T edd::stack<T>::peek(){
     return llist->getLast();
 }
 

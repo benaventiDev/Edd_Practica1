@@ -1,71 +1,151 @@
+//
+// Created by benav on 2/19/2020.
+//
+/*
+ * currentPos will handle the position within the doubleLinkedList
+ * y will handle the number of lines, while x will handle the postion in the current line
+ * currentpos' purpose is to keep track within the list while x and y is to display on screen.
+ *
+ *
+ */
+
+#include <unistd.h>
 #include "Editor.h"
 
-#include <fstream>
-#include <iostream>
-#include <sstream>
-
-using namespace std;
-
-Editor::Editor()
-{
-    currentPos = 0;
-
-
-
-    //Not my code
+Editor::Editor(){
+    mainText = new doubleLinkedList<char>();
+    currentPos = -1;/*C'est seulement pour savoir la postion actuelle dedans la liste mais rien a voir avec la position sur l'ecran  */
+    LinesCounter = 1; /* Afin de creer le tableau qui contient chaque ligne pour l'imprimer sur l'ecran rien a voir avec la position sur l'ecran*/
+    status = "";
     x=0;y=0;mode='i';
-    status = "Normal Mode";
-    filename = "untitled";
-
-    /* Initializes buffer and appends line to
-        prevent seg. faults */
-    buff = new Buffer();
-    buff->appendLine("");
 }
 
-Editor::Editor(string fn)
+
+
+string Editor::toString(int i)
 {
-    x=0;y=0;mode='n';
-    status = "Normal Mode";
-    filename = fn;
+    stringstream ss;
+    ss << i;
+    return ss.str();
+}
 
-    buff = new Buffer();
 
-    ifstream infile(fn.c_str());
-    if(infile.is_open())
+
+
+void Editor::handleInput(int c){
+
+    switch(c)
     {
-        while(!infile.eof())
-        {
-            string temp;
-            getline(infile, temp);
-            buff->appendLine(temp);
+        case KEY_LEFT:
+            moveLeft();
+            return;
+        case KEY_RIGHT:
+            moveRight();
+            return;
+        case KEY_UP:
+
+                moveUp();
+
+
+
+            return;
+        case KEY_DOWN:
+
+                moveDown();
+
+
+            return;
+    }
+
+
+    switch(c){
+
+        case KEY_ENTER:
+        case 10:
+            currentPos++;
+            LinesCounter++;
+            y++;
+            x = 0;
+            mainText->addAt( '\n', currentPos);
+            break;
+        default:
+            currentPos++;
+            x++;
+            mainText->addAt( char (c), currentPos);
+            //status += ".Size hi: " + tos(mainText->getSize());
+
+    }
+
+
+
+
+
+}
+
+
+void Editor::test(){
+
+
+
+
+
+
+}
+
+void Editor::resetStatus(){
+    status ="";
+}
+void Editor::printScreen(){
+
+    string lines[LinesCounter] = {};
+    string line = "";
+    int i = 0;
+    mainText->begin();
+
+    while(mainText->hasNext()){
+        line += mainText->next();
+        if(mainText->next() == '\n'){
+            //y++; x =0;// TODO: aqui puede ser un buen lugar para poner la posicion actual
+            lines[i]= (line);
+            i++;
+            line = "";
         }
     }
-    else
-    {
-        cerr << "Cannot open file: '" << fn << "'\n";
-        buff->appendLine("");
+    if(line.compare("") != 0){
+        lines[LinesCounter-1] = line;
     }
+
+
+    for(int i=0; i<LINES-1; i++) // LINES is /* terminal height */
+    {
+        if(i >= (sizeof(lines)/sizeof(lines[0])))
+        {
+            move(i, 0);
+            clrtoeol(); // Erase the current line to the right of the cursor.
+        }
+        else
+        {
+            mvprintw(i, 0, lines[i].c_str());
+        }
+        clrtoeol();
+    }
+
 }
 
-void Editor::updateStatus()
-{
-    switch(mode)
-    {
-        case 'n':
-            // Normal mode
-            status = "Normal Mode";
-            break;
-        case 'i':
-            // Insert mode
-            status = "Insert Mode";
-            break;
-        case 'x':
-            // Exiting
-            status = "Exiting";
-            break;
-    }
-    status += "\tCOL: " + tos(x) + "\tROW: " + tos(y);
+
+void Editor::updateStatus(){
+
+    status += "\tCOL: " + tos(x) + "\tROW: " + tos(y) + "CP: "+ tos(currentPos);
+}
+
+void Editor::printStatusLine(){
+
+    attron(A_REVERSE);
+    mvprintw(LINES-1, 0, status.c_str());
+    clrtoeol();
+    attroff(A_REVERSE);
+    move(y, x);
+    status = "";
 }
 
 string Editor::tos(int i)
@@ -75,209 +155,132 @@ string Editor::tos(int i)
     return ss.str();
 }
 
-void Editor::handleInput(int c){
-    buff->addCharAt(currentPos, char(c));
-    currentPos++;
-
-}
-
-
-void Editor::handleInput1(int c)
-{
-    //TODO: Handle right, left, up and down.
-
-    switch(c)
-            {
-                case 0x0013:// CTRL + S
-                    break;
-                case 27:
-                    // The Escape/Alt key
-                    mode = 'n';
-                    break;
-                case 0x0008:
-
-                case 127:
-                case KEY_BACKSPACE:
-
-                    // The Backspace key
-                    if(x == 0 && y > 0)
-                    {
-
-                        x = buff->lines[y-1].length();
-                        // Bring the line down
-                        buff->lines[y-1] += buff->lines[y];
-                        // Delete the current line
-                        deleteLine();
-                        moveUp();
-                    }else if(x==0 && y ==0){}
-                    else
-                    {
-                        // Removes a character
-                        buff->lines[y].erase(--x, 1);
-                    }
-                    break;
-                case KEY_DC:
-                    // The Delete key
-                    if(x == buff->lines[y].length() && y != buff->lines.size() - 1)
-                    {
-                        // Bring the line down
-                        buff->lines[y] += buff->lines[y+1];
-                        // Delete the line
-                        deleteLine(y+1);
-                    }
-                    else
-                    {
-                        buff->lines[y].erase(x, 1);
-                    }
-                    break;
-                case KEY_ENTER:
-                case 10:
-                    // The Enter key
-                    // Bring the rest of the line down
-                    if(x < buff->lines[y].length())
-                    {
-                        // Put the rest of the line on a new line
-                        buff->insertLine(buff->lines[y].substr(x, buff->lines[y].length() - x), y + 1);
-                        // Remove that part of the line
-                        buff->lines[y].erase(x, buff->lines[y].length() - x);
-                    }
-                    else
-                    {
-                        buff->insertLine("", y+1);
-                    }
-                    x = 0;
-                    moveDown();
-                    break;
-                case KEY_BTAB:
-                case KEY_CTAB:
-                case KEY_STAB:
-                case KEY_CATAB:
-                case 9:
-                    // The Tab key
-                    buff->lines[y].insert(x, 4, ' ');
-                    x += 4;
-                    break;
-                default:
-                    // Any other character
-                    buff->lines[y].insert(x, 1, char(c));
-                    x++;
-                    break;
-            }
-
-}
-
-void Editor::moveLeft()
-{
-    if(x-1 >= 0)
-    {
-        x--;
-        move(y, x);
+void Editor::moveLeft(){
+    currentPos--;
+    if(currentPos < -1){
+        currentPos = -1;
     }
+
+    moveTo();
+
 }
+
 
 void Editor::moveRight()
 {
-    if(x+1 < COLS && x+1 <= buff->lines[y].length())
-    {
-        x++;
-        move(y, x);
+
+    currentPos++;
+    if(currentPos >= mainText->getSize()){
+        currentPos = mainText->getSize()-1;
     }
+    moveTo();
+
 }
 
-void Editor::moveUp()
-{
-    if(y-1 >= 0)
-        y--;
-    if(x >= buff->lines[y].length())
-        x = buff->lines[y].length();
-    move(y, x);
-}
+void Editor::moveUp(){
+    int newY = y-1;
+    int newX = x;
+    if(newY < 0){
+        return;
+    }
+    int ycounter = 0;
+    int xcounter = 0;
+    int newPos = 0;
+    mainText->begin();
+    while(mainText->hasNext()){
+        if(mainText->next() == '\n'){
+            if(ycounter == newY){
 
-void Editor::moveDown()
-{
-    if(y+1 < LINES-1 && y+1 < buff->lines.size()) // LINES is /* terminal height */
-        y++;
-    if(x >= buff->lines[y].length())
-        x = buff->lines[y].length();
-    move(y, x);
-}
-void Editor::printBuff() {
-    /*This go over screen line by screen line. Screen line is not a real line,
-     * is just how many lines are being displayed in the screen */
-    string* lines = buff->getLines();
+                break;
+            }
+            newPos++;
+            xcounter = 0;
+            ycounter++;
+        } else{
 
-    for (int i = 0; i < LINES - 1; i++){ // LINES is /* terminal height */
-        if(i >= buff->getLinesCounter()) // If there are remaining lines in the screen, not being used by the text editor
-        {
-            move(i, 0);
-            clrtoeol(); // Erase the current line to the right of the cursor.
-        } else{ // Here is where I print the actual lines.
-            mvprintw(i, 0, lines[i].c_str());
+            if(ycounter == newY && xcounter == newX){
+                break;
+            }
+            xcounter++;
+            newPos++;
+
         }
-        clrtoeol();
-    }
 
-    move(y, x);
+
+    }
+    currentPos = newPos-1;
+    moveTo();
 
 }
 
-void Editor::printBuff1() //TODO: Delete
-{
-    for(int i=0; i<LINES-1; i++) // LINES is /* terminal height */
-    {
-        if(i >= buff->lines.size())
-        {
-            move(i, 0);
-            clrtoeol(); // Erase the current line to the right of the cursor.
+
+
+
+void Editor::moveDown() {
+
+    int currentPosCopy = currentPos;
+if(currentPosCopy < 0){currentPosCopy = 0;}
+if(mainText->getSize()==0){ return;}
+node<char> *current = mainText->getNodeAt(currentPosCopy);
+
+    if(current != nullptr && current->getData() == '\n'){
+        currentPosCopy++;
+        current = mainText->getNodeAt(currentPosCopy);
+        while (current != nullptr && current->getData() != '\n'){
+            currentPosCopy++;
+            current = current->getNext();
+            if(current== nullptr){ return;}
+            if(current->getData() == '\n'){  break;}
         }
-        else
-        {
-            mvprintw(i, 0, buff->lines[i].c_str());
+        currentPos = currentPosCopy;
+        moveTo();
+        return;
+    }
+
+
+
+while (current != nullptr && current->getData() != '\n'){
+    currentPosCopy++;
+    current = current->getNext();
+    if(current== nullptr){ return;}
+    if(current->getData() == '\n'){ currentPosCopy++; break;}
+}
+
+    current = mainText->getNodeAt(currentPosCopy);
+    int counter = 0;
+    while (current != nullptr && current->getData() != '\n'){
+        current = current->getNext();
+        if(counter == x){ break;}
+        counter++;
+    }
+    currentPos = currentPosCopy + counter - 1;
+    moveTo();
+
+}
+
+void Editor::moveTo(){
+    node<char> *current = mainText->getNodeAt(0);
+    if(current == nullptr || currentPos == -1){//if no data or new pos is -1
+        x = 0; y = 0;
+    }else{
+        x = 0; y = 0;
+        int counter = 0;
+        mainText->begin();
+
+        while(mainText->hasNext()){
+            x++;
+            if(mainText->next()== '\n'){
+                y++;
+                x = 0;
+            }
+            if(counter == currentPos){
+                break;
+            }
+            counter++;
         }
-        clrtoeol();
-    }
-    move(y, x);
-}
-
-void Editor::printStatusLine()
-{
-    attron(A_REVERSE);
-    mvprintw(LINES-1, 0, status.c_str());
-    clrtoeol();
-    attroff(A_REVERSE);
-}
-
-void Editor::deleteLine()
-{
-    buff->removeLine(y);
-}
-
-void Editor::deleteLine(int i)
-{
-    buff->removeLine(i);
-}
-
-void Editor::saveFile()
-{
-    if(filename == "")
-    {
-        // Set filename to untitled
-        filename = "untitled";
     }
 
-    ofstream f(filename.c_str());
-    if(f.is_open())
-    {
-        for(int i=0; i<buff->lines.size(); i++)
-        {
-            f << buff->lines[i] << endl;
-        }
-        status = "Saved to file!";
-    }
-    else
-    {
-        status = "Error: Cannot open file for writing!";
-    }
-    f.close();
-}
+    //move(y, x);
+    //move(50,100);
 
+}

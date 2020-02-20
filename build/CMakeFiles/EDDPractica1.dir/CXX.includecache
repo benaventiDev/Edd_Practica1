@@ -12,31 +12,33 @@ C:/Users/benav/CLionProjects/EDDPractica1/edd/node.h
 iostream
 -
 
+C:/Users/benav/CLionProjects/EDDPractica1/edd/linkedList.h
+node.h
+C:/Users/benav/CLionProjects/EDDPractica1/edd/node.h
+stdlib.h
+-
+iostream
+-
+
 C:/Users/benav/CLionProjects/EDDPractica1/edd/node.h
 iostream
 -
 
 C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.cpp
+unistd.h
+-
 Editor.h
 C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.h
-fstream
--
-iostream
--
-sstream
--
 
 C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.h
 pdcurs36/curses.h
 -
-Buffer.h
-C:/Users/benav/CLionProjects/EDDPractica1/editor/buffer.h
-
-C:/Users/benav/CLionProjects/EDDPractica1/editor/buffer.h
-string
--
-vector
--
 ../edd/doubleLinkedList.h
 C:/Users/benav/CLionProjects/EDDPractica1/edd/doubleLinkedList.h
+../edd/LinkedList.h
+C:/Users/benav/CLionProjects/EDDPractica1/edd/linkedList.h
+string
+-
+sstream
+-
 

@@ -6,6 +6,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/benav/CLionProjects/EDDPractica1/editor/Buffer.cpp" "C:/Users/benav/CLionProjects/EDDPractica1/build/CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj"
   "C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.cpp" "C:/Users/benav/CLionProjects/EDDPractica1/build/CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj"
+  "C:/Users/benav/CLionProjects/EDDPractica1/editor/EditorFirst.cpp" "C:/Users/benav/CLionProjects/EDDPractica1/build/CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj"
+  "C:/Users/benav/CLionProjects/EDDPractica1/editor/TBuffer.cpp" "C:/Users/benav/CLionProjects/EDDPractica1/build/CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj"
   "C:/Users/benav/CLionProjects/EDDPractica1/main.cpp" "C:/Users/benav/CLionProjects/EDDPractica1/build/CMakeFiles/EDDPractica1.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

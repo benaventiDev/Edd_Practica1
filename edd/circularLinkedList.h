@@ -18,15 +18,15 @@ namespace edd{
         int size;
     public:
         circularLinkedList();
-        void addLast(T *);
-        void addFirst(T *);
-        bool addAt(T *, int);
+        void addLast(T );
+        void addFirst(T );
+        bool addAt(T , int);
         void clear();
         bool clone();
-        bool contains(T *);
-        T* getAt(int);
-        T* getFirst();
-        T* getLast();
+        bool contains(T );
+        T getAt(int);
+        T getFirst();
+        T getLast();
         int getSize();
         int indexOf(T);
         int removeAt(int);
@@ -37,8 +37,8 @@ namespace edd{
         void end();
         bool hasNext();
         bool hasPrevious();
-        T* next();
-        T* previous();
+        T next();
+        T previous();
 
     };
 
@@ -56,12 +56,12 @@ template <typename T>
 edd::circularLinkedList<T>::circularLinkedList(){
     first = nullptr;
     last = nullptr;
-    currentNode = new node<T>(nullptr);
+    currentNode = new node<T>('\0');
     currentNodeBackup = currentNode;
     size = 0;
 }
 template <typename T>
-void edd::circularLinkedList<T>::addLast(T *data){
+void edd::circularLinkedList<T>::addLast(T data){
     node<T>* newNode = new node<T>(data);
     if(last == nullptr){
         first = last = newNode;
@@ -75,7 +75,7 @@ void edd::circularLinkedList<T>::addLast(T *data){
     size ++;
 }
 template <typename T>
-void edd::circularLinkedList<T>::addFirst(T *data){
+void edd::circularLinkedList<T>::addFirst(T data){
     node<T>* newNode = new node<T>(data);
     if(first == nullptr){
         last = first = newNode;
@@ -90,14 +90,14 @@ void edd::circularLinkedList<T>::addFirst(T *data){
     }
 }
 template <typename T>
-bool edd::circularLinkedList<T>::addAt(T *data, int index){
+bool edd::circularLinkedList<T>::addAt(T data, int index){
     if(index +1  >= size ){
         addLast(data);
         return false;
     } else if(index == 0){
         addFirst(data);
         return true;
-    }else{
+    }else {
         node<T>* supportNode = nullptr;
         node<T>* currentNode = first;
         node<T>* newNode = new node<T>(data);
@@ -127,11 +127,11 @@ bool edd::circularLinkedList<T>::clone(){
 
 }
 template <typename T>
-bool edd::circularLinkedList<T>::contains(T *data){
+bool edd::circularLinkedList<T>::contains(T data){
 
 }
 template <typename T>
-T* edd::circularLinkedList<T>::getAt(int index){
+T edd::circularLinkedList<T>::getAt(int index){
     if(index < size){
         node<T>* tempNode = first;
         for (int i = 0; i <= index ; ++i) {
@@ -144,12 +144,12 @@ T* edd::circularLinkedList<T>::getAt(int index){
     return nullptr;
 }
 template <typename T>
-T* edd::circularLinkedList<T>::getFirst(){
+T edd::circularLinkedList<T>::getFirst(){
     if(first== nullptr){ return nullptr;}
     return first->getData();
 }
 template <typename T>
-T* edd::circularLinkedList<T>::getLast(){
+T edd::circularLinkedList<T>::getLast(){
     if(last == nullptr){ return nullptr;}
     return last->getData();
 }
@@ -250,11 +250,11 @@ bool edd::circularLinkedList<T>::hasPrevious(){
     return false;
 }
 template <typename T>
-T* edd::circularLinkedList<T>::next(){
+T edd::circularLinkedList<T>::next(){
     return currentNode->getData();
 }
 template <typename T>
-T* edd::circularLinkedList<T>::previous(){
+T edd::circularLinkedList<T>::previous(){
     return currentNode->getData();
 }
 

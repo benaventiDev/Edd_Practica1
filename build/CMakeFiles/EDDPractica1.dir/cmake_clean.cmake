@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj"
   "CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj"
+  "CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj"
+  "CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj"
   "CMakeFiles/EDDPractica1.dir/main.cpp.obj"
   "EDDPractica1.exe"
   "EDDPractica1.exe.manifest"

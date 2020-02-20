@@ -7,15 +7,25 @@ CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj: ../editor/Buffer.cpp
 CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj: ../editor/buffer.h
 
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: ../edd/doubleLinkedList.h
+CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: ../edd/linkedList.h
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: ../edd/node.h
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: ../editor/Editor.cpp
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: ../editor/Editor.h
-CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: ../editor/buffer.h
+
+CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj: ../edd/doubleLinkedList.h
+CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj: ../edd/node.h
+CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj: ../editor/EditorFirst.cpp
+CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj: ../editor/EditorFirst.h
+CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj: ../editor/buffer.h
+
+CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj: ../edd/doubleLinkedList.h
+CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj: ../edd/node.h
+CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj: ../editor/TBuffer.cpp
+CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj: ../editor/TBuffer.h
 
 CMakeFiles/EDDPractica1.dir/main.cpp.obj: ../edd/doubleLinkedList.h
 CMakeFiles/EDDPractica1.dir/main.cpp.obj: ../edd/linkedList.h
 CMakeFiles/EDDPractica1.dir/main.cpp.obj: ../edd/node.h
 CMakeFiles/EDDPractica1.dir/main.cpp.obj: ../editor/Editor.h
-CMakeFiles/EDDPractica1.dir/main.cpp.obj: ../editor/buffer.h
 CMakeFiles/EDDPractica1.dir/main.cpp.obj: ../main.cpp
 

@@ -1,16 +1,54 @@
 #include <iostream>
 #include <pdcurs36/curses.h>
 #include <string>
-#include "editor/editor.h"
+#include <stdio.h>
+#include "editor/Editor.h"
 
 #include "edd/node.h"
+#include "edd/doubleLinkedList.h"
 #include "edd/linkedList.h"
 
 void curses_init();
 using namespace edd;
 
 
+int main1(){
 
+    char c;
+    int x = 0;
+    int y = 0;
+    std::cout<< "Enter text:" << std::endl;
+    Editor ed = Editor();
+    do{
+        c =getchar();
+
+    }while (c!='.');
+
+
+
+/*
+    doubleLinkedList<char>* mainText= buffer->getMainText();
+    std::cout<< "Size is: " << mainText->getSize() << std::endl;
+    string line ="";
+    mainText->begin();
+    std::cout << "begin text" <<std::endl;
+  */
+    /*
+    Editor ed = Editor();
+    int c;
+    do{
+
+        c = getchar();
+        ed.handleInput(c);
+
+    }while (c != '.');
+
+    ed.test();
+*/
+
+
+    return 0;
+}
 
 
 int main(int argc, char *argv[]) {
@@ -22,7 +60,7 @@ int main(int argc, char *argv[]) {
     if(argc > 1)
     {
         fn = argv[1];               // Set the filename
-        ed = Editor(fn);
+        //ed = Editor(fn);
     }
     else
     {
@@ -33,9 +71,12 @@ int main(int argc, char *argv[]) {
 
     while(ed.getMode() != 'x')
     {
+
+        ed.printScreen();
         ed.updateStatus();
         ed.printStatusLine();
-        ed.printBuff();
+
+
         int input = getch();        // Blocking until input
         ed.handleInput(input);
     }

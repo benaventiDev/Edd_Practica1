@@ -1,45 +1,46 @@
-#ifndef EDITOR_H
-#define EDITOR_H
+//
+// Created by benav on 2/19/2020.
+//
+
+#ifndef EDDPRACTICA1_EDITOR_H
+#define EDDPRACTICA1_EDITOR_H
 
 #include <pdcurs36/curses.h>
+#include "../edd/doubleLinkedList.h"
+#include "../edd/LinkedList.h"
+#include <string>
+#include <sstream>
 
-#include "Buffer.h"
+using namespace edd;
+using namespace std;
 
-class Editor
-{
+class Editor {
 private:
-    int currentPos;
-    int x, y;
-    char mode;
-    Buffer* buff;
-    string status, filename;
-
-    /* For those of you who do not have -std=c++11 in g++ */
-    string tos(int);
-
-    // Cursor movement
-    void moveUp();
-    void moveDown();
-    void moveLeft();
-    void moveRight();
-
-    void deleteLine();                  // Deletes current line
-    void deleteLine(int);               // Deletes line <int>
-
-    void saveFile();                    // Saves buffer into the file
-
+    doubleLinkedList<char> *mainText;
+    int currentPos, x, y, mode;
+    int LinesCounter = 1;
+    string status;
 public:
-    Editor();                           // Normal constructor
-    Editor(string);                     // Constructor accepting filename
-
+    Editor();
+    string toString(int i);
+    void handleInput(int c);
+    void printScreen();
     char getMode() {return mode;}
+    void test();
 
-    void handleInput1(int);
-    void handleInput(int);              // Handles keyboard input
-    void printBuff();
-    void printStatusLine();             // Prints the status line (like vim!!!)
-    void updateStatus();                // Updates the status line (text, not display)
-    void printBuff1();    //TODO: DELETE
+
+
+    void moveDown();
+    void moveUp();
+    void moveRight();
+    void moveLeft();
+    void moveTo();
+    void printStatusLine();
+    void updateStatus();
+    string tos(int );
+    void resetStatus();
+
 };
 
-#endif
+
+#endif //EDDPRACTICA1_EDITOR_H

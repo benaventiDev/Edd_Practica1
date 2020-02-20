@@ -8,14 +8,24 @@ CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj
  C:/Users/benav/CLionProjects/EDDPractica1/editor/buffer.h
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj
  C:/Users/benav/CLionProjects/EDDPractica1/edd/doubleLinkedList.h
+ C:/Users/benav/CLionProjects/EDDPractica1/edd/linkedList.h
  C:/Users/benav/CLionProjects/EDDPractica1/edd/node.h
  C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.cpp
  C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.h
+CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj
+ C:/Users/benav/CLionProjects/EDDPractica1/edd/doubleLinkedList.h
+ C:/Users/benav/CLionProjects/EDDPractica1/edd/node.h
+ C:/Users/benav/CLionProjects/EDDPractica1/editor/EditorFirst.cpp
+ C:/Users/benav/CLionProjects/EDDPractica1/editor/EditorFirst.h
  C:/Users/benav/CLionProjects/EDDPractica1/editor/buffer.h
+CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj
+ C:/Users/benav/CLionProjects/EDDPractica1/edd/doubleLinkedList.h
+ C:/Users/benav/CLionProjects/EDDPractica1/edd/node.h
+ C:/Users/benav/CLionProjects/EDDPractica1/editor/TBuffer.cpp
+ C:/Users/benav/CLionProjects/EDDPractica1/editor/TBuffer.h
 CMakeFiles/EDDPractica1.dir/main.cpp.obj
  C:/Users/benav/CLionProjects/EDDPractica1/edd/doubleLinkedList.h
  C:/Users/benav/CLionProjects/EDDPractica1/edd/linkedList.h
  C:/Users/benav/CLionProjects/EDDPractica1/edd/node.h
  C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.h
- C:/Users/benav/CLionProjects/EDDPractica1/editor/buffer.h
  C:/Users/benav/CLionProjects/EDDPractica1/main.cpp

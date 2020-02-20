@@ -34,7 +34,8 @@ void Buffer::removeLine(int n)
 
 
 void Buffer::addCharAt( int index, char c){
-    mainText->addAt(&c, index);
+    char a = c;
+    mainText->addAt(a, index);
 }
 
 
@@ -47,7 +48,7 @@ string Buffer::getLine(int lineNumber){
     mainText->begin();
     string line = "";
     while(mainText->hasNext()){
-        line.append(mainText->next());
+        //line.append(mainText->next());
     }
 
     return line;
@@ -65,11 +66,11 @@ string* Buffer::getLines(){
 
 
         while(mainText->hasNext()){
-            if(*mainText->next() == '\n'){
+            if(mainText->next() == '\n'){
                 lines[counter] = line;
                 counter++;
             } else{
-                line += *mainText->next();
+                line += mainText->next();
             }
         }
 

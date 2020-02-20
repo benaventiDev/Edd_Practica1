@@ -20,15 +20,15 @@ namespace edd{
         int size;
     public:
         linkedList();
-        void addLast(T *);
-        void addFirst(T *);
-        bool addAt(T *, int);
+        void addLast(T );
+        void addFirst(T );
+        bool addAt(T , int);
         void clear();
         bool clone();
-        bool contains(T *);
-        T* getAt(int);
-        T* getFirst();
-        T* getLast();
+        bool contains(T );
+        T getAt(int);
+        T getFirst();
+        T getLast();
         int getSize();
         int indexOf(T);
         int removeAt(int);
@@ -37,7 +37,7 @@ namespace edd{
         //This is for the iterator
         void begin();
         bool hasNext();
-        T* next();
+        T next();
 
 
     };
@@ -56,7 +56,7 @@ edd::linkedList<T>::linkedList() {
 }
 
 template <typename T>
-void edd::linkedList<T>::addLast(T *data){
+void edd::linkedList<T>::addLast(T data){
     node<T>* newNode = new node<T>(data);
     if(last == nullptr){
         first = last = newNode;
@@ -68,7 +68,7 @@ void edd::linkedList<T>::addLast(T *data){
 }
 
 template <typename T>
-void edd::linkedList<T>::addFirst(T *data){
+void edd::linkedList<T>::addFirst(T data){
     node<T>* newNode = new node<T>(data);
     if(first == nullptr){
         last = first = newNode;
@@ -81,11 +81,14 @@ void edd::linkedList<T>::addFirst(T *data){
 }
 
 template <typename T>
-bool edd::linkedList<T>::addAt(T *data, int index){
+bool edd::linkedList<T>::addAt(T data, int index){
     if(index +1  >= size ){
         addLast(data);
         return false;
-    } else{
+    } else if(index == 0){
+        addFirst(data);
+        return true;
+    }else{
 
         node<T>* supportNode = nullptr;
         node<T>* currentNode = first;
@@ -118,10 +121,10 @@ template <typename T>
 bool edd::linkedList<T>::clone(){}
 
 template <typename T>
-bool edd::linkedList<T>::contains(T *data){}
+bool edd::linkedList<T>::contains(T data){}
 
 template <typename T>
-T* edd::linkedList<T>::getAt(int index){
+T edd::linkedList<T>::getAt(int index){
     if(index < size){
         node<T>* tempNode = first;
         for (int i = 0; i <= index ; ++i) {
@@ -135,13 +138,13 @@ T* edd::linkedList<T>::getAt(int index){
 }
 
 template <typename T>
-T* edd::linkedList<T>::getFirst(){
+T edd::linkedList<T>::getFirst(){
     if(first== nullptr){ return nullptr;}
     return first->getData();
 }
 
 template <typename T>
-T* edd::linkedList<T>::getLast(){
+T edd::linkedList<T>::getLast(){
     if(last == nullptr){ return nullptr;}
     return last->getData();
 }
@@ -231,7 +234,7 @@ bool edd::linkedList<T>::hasNext(){
 
 
 template <typename T>
-T* edd::linkedList<T>::next(){
+T edd::linkedList<T>::next(){
     return currentNode->getData();
 }
 

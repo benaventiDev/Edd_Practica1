@@ -19,10 +19,10 @@ namespace edd{
     private:
         node *next;
         node *previous;
-        T *data; // this is a pointer;
+        T data; // this is a pointer;
 
     public:
-        node(T *);
+        node(T );
         void setNext(node *);
         void removeNext();
         void setPrevious(node *);
@@ -31,7 +31,7 @@ namespace edd{
         node *getPrevious();
         bool hasNext();
         bool hasPrevious();
-        T* getData();
+        T getData();
         void print();// To Delete
         ~node();
     };
@@ -44,7 +44,7 @@ namespace edd{
 
 
 template <class T>
-edd::node<T>::node(T *value) {
+edd::node<T>::node(T value) {
     data = value;
     previous = nullptr;
     next = nullptr;
@@ -81,7 +81,7 @@ edd::node<T> *edd::node<T>::getPrevious(){
 }
 
 template <class T>
-T* edd::node<T>::getData(){
+T edd::node<T>::getData(){
     return data; // retorna un puntero de data
 }
 

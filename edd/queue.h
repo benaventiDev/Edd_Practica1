@@ -19,9 +19,9 @@ namespace edd{
         queue();
         bool isEmpty();
         int getSize();
-        T* getFront();
-        T* dequeue();
-        void enqueue(T*);
+        T getFront();
+        T dequeue();
+        void enqueue(T);
         void clear();
 
 
@@ -49,12 +49,12 @@ int edd::queue<T>::getSize(){
 }
 
 template <typename T>
-T* edd::queue<T>::getFront(){
+T edd::queue<T>::getFront(){
     return llist->getFirst();
 }
 
 template <typename T>
-T* edd::queue<T>::dequeue(){
+T edd::queue<T>::dequeue(){
     if(llist->getSize()==0){
         return nullptr;
     }
@@ -64,7 +64,7 @@ T* edd::queue<T>::dequeue(){
 }
 
 template <typename T>
-void edd::queue<T>::enqueue(T* data){
+void edd::queue<T>::enqueue(T data){
     llist->addLast(data);
 }
 
