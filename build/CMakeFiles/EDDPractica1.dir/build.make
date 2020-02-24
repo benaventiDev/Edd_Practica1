@@ -69,48 +69,9 @@ CMakeFiles/EDDPractica1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/main.cpp.s"
 	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\main.cpp -o CMakeFiles\EDDPractica1.dir\main.cpp.s
 
-CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
-CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj: ../editor/Buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj"
-	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\editor\Buffer.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\editor\Buffer.cpp
-
-CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.i"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\benav\CLionProjects\EDDPractica1\editor\Buffer.cpp > CMakeFiles\EDDPractica1.dir\editor\Buffer.cpp.i
-
-CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.s"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\editor\Buffer.cpp -o CMakeFiles\EDDPractica1.dir\editor\Buffer.cpp.s
-
-CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
-CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj: ../editor/EditorFirst.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj"
-	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\editor\EditorFirst.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\editor\EditorFirst.cpp
-
-CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.i"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\benav\CLionProjects\EDDPractica1\editor\EditorFirst.cpp > CMakeFiles\EDDPractica1.dir\editor\EditorFirst.cpp.i
-
-CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.s"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\editor\EditorFirst.cpp -o CMakeFiles\EDDPractica1.dir\editor\EditorFirst.cpp.s
-
-CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
-CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj: ../editor/TBuffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj"
-	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\editor\TBuffer.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\editor\TBuffer.cpp
-
-CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.i"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\benav\CLionProjects\EDDPractica1\editor\TBuffer.cpp > CMakeFiles\EDDPractica1.dir\editor\TBuffer.cpp.i
-
-CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.s"
-	C:\MinGW64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\benav\CLionProjects\EDDPractica1\editor\TBuffer.cpp -o CMakeFiles\EDDPractica1.dir\editor\TBuffer.cpp.s
-
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: CMakeFiles/EDDPractica1.dir/flags.make
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj: ../editor/Editor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj"
 	C:\MinGW64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDDPractica1.dir\editor\Editor.cpp.obj -c C:\Users\benav\CLionProjects\EDDPractica1\editor\Editor.cpp
 
 CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.i: cmake_force
@@ -124,25 +85,19 @@ CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.s: cmake_force
 # Object files for target EDDPractica1
 EDDPractica1_OBJECTS = \
 "CMakeFiles/EDDPractica1.dir/main.cpp.obj" \
-"CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj" \
-"CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj" \
-"CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj" \
 "CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj"
 
 # External object files for target EDDPractica1
 EDDPractica1_EXTERNAL_OBJECTS =
 
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/main.cpp.obj
-EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj
-EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj
-EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.obj
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/build.make
 EDDPractica1.exe: C:/MinGW64/x86_64-w64-mingw32/include/pdcurs36/wincon/pdcurses.a
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/linklibs.rsp
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/objects1.rsp
 EDDPractica1.exe: CMakeFiles/EDDPractica1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable EDDPractica1.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\benav\CLionProjects\EDDPractica1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable EDDPractica1.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EDDPractica1.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

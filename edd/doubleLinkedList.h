@@ -223,6 +223,8 @@ int edd::doubleLinkedList<T>::removeAt(int index){
         if(i == index){
             supportNode->setNext(currentNode->getNext());
             currentNode->getNext()->setPrevious(supportNode);
+            size--;
+            return i;
         }
         supportNode = currentNode;
         currentNode = currentNode->getNext();

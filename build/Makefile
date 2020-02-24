@@ -122,33 +122,6 @@ EDDPractica1/fast:
 	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/build
 .PHONY : EDDPractica1/fast
 
-editor/Buffer.obj: editor/Buffer.cpp.obj
-
-.PHONY : editor/Buffer.obj
-
-# target to build an object file
-editor/Buffer.cpp.obj:
-	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.obj
-.PHONY : editor/Buffer.cpp.obj
-
-editor/Buffer.i: editor/Buffer.cpp.i
-
-.PHONY : editor/Buffer.i
-
-# target to preprocess a source file
-editor/Buffer.cpp.i:
-	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.i
-.PHONY : editor/Buffer.cpp.i
-
-editor/Buffer.s: editor/Buffer.cpp.s
-
-.PHONY : editor/Buffer.s
-
-# target to generate assembly for a file
-editor/Buffer.cpp.s:
-	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/Buffer.cpp.s
-.PHONY : editor/Buffer.cpp.s
-
 editor/Editor.obj: editor/Editor.cpp.obj
 
 .PHONY : editor/Editor.obj
@@ -175,60 +148,6 @@ editor/Editor.s: editor/Editor.cpp.s
 editor/Editor.cpp.s:
 	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/Editor.cpp.s
 .PHONY : editor/Editor.cpp.s
-
-editor/EditorFirst.obj: editor/EditorFirst.cpp.obj
-
-.PHONY : editor/EditorFirst.obj
-
-# target to build an object file
-editor/EditorFirst.cpp.obj:
-	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.obj
-.PHONY : editor/EditorFirst.cpp.obj
-
-editor/EditorFirst.i: editor/EditorFirst.cpp.i
-
-.PHONY : editor/EditorFirst.i
-
-# target to preprocess a source file
-editor/EditorFirst.cpp.i:
-	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.i
-.PHONY : editor/EditorFirst.cpp.i
-
-editor/EditorFirst.s: editor/EditorFirst.cpp.s
-
-.PHONY : editor/EditorFirst.s
-
-# target to generate assembly for a file
-editor/EditorFirst.cpp.s:
-	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/EditorFirst.cpp.s
-.PHONY : editor/EditorFirst.cpp.s
-
-editor/TBuffer.obj: editor/TBuffer.cpp.obj
-
-.PHONY : editor/TBuffer.obj
-
-# target to build an object file
-editor/TBuffer.cpp.obj:
-	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.obj
-.PHONY : editor/TBuffer.cpp.obj
-
-editor/TBuffer.i: editor/TBuffer.cpp.i
-
-.PHONY : editor/TBuffer.i
-
-# target to preprocess a source file
-editor/TBuffer.cpp.i:
-	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.i
-.PHONY : editor/TBuffer.cpp.i
-
-editor/TBuffer.s: editor/TBuffer.cpp.s
-
-.PHONY : editor/TBuffer.s
-
-# target to generate assembly for a file
-editor/TBuffer.cpp.s:
-	$(MAKE) -f CMakeFiles\EDDPractica1.dir\build.make CMakeFiles/EDDPractica1.dir/editor/TBuffer.cpp.s
-.PHONY : editor/TBuffer.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -266,18 +185,9 @@ help:
 	@echo ... EDDPractica1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... editor/Buffer.obj
-	@echo ... editor/Buffer.i
-	@echo ... editor/Buffer.s
 	@echo ... editor/Editor.obj
 	@echo ... editor/Editor.i
 	@echo ... editor/Editor.s
-	@echo ... editor/EditorFirst.obj
-	@echo ... editor/EditorFirst.i
-	@echo ... editor/EditorFirst.s
-	@echo ... editor/TBuffer.obj
-	@echo ... editor/TBuffer.i
-	@echo ... editor/TBuffer.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

@@ -204,7 +204,8 @@ int edd::circularLinkedList<T>::removeAt(int index){
         if(i == index){
             supportNode->setNext(currentNode->getNext());
             currentNode->getNext()->setPrevious(supportNode);
-
+            size--;
+            return i;
 
 
         }

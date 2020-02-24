@@ -50,7 +50,7 @@ template <typename T>
 edd::linkedList<T>::linkedList() {
     first = nullptr;
     last = nullptr;
-    currentNode = new node<T>(nullptr);;
+    currentNode = new node<T>('\0');
     currentNodeBackup = currentNode;
     size = 0;
 }

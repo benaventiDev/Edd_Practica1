@@ -20,9 +20,10 @@ private:
     int currentPos, x, y, mode;
     int LinesCounter = 1;
     string status;
+    string findAndReplace;
 public:
     Editor();
-    string toString(int i);
+
     void handleInput(int c);
     void printScreen();
     char getMode() {return mode;}
@@ -38,6 +39,7 @@ public:
     void printStatusLine();
     void updateStatus();
     string tos(int );
+    void find_replace();
     void resetStatus();
 
 };

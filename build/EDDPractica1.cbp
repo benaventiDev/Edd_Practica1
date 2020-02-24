@@ -100,31 +100,10 @@
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/edd/stack.h">
 			<Option target="EDDPractica1"/>
 		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/Buffer.cpp">
-			<Option target="EDDPractica1"/>
-		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/Buffer.h">
-			<Option target="EDDPractica1"/>
-		</Unit>
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.cpp">
 			<Option target="EDDPractica1"/>
 		</Unit>
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/Editor.h">
-			<Option target="EDDPractica1"/>
-		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/EditorFirst.cpp">
-			<Option target="EDDPractica1"/>
-		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/EditorFirst.h">
-			<Option target="EDDPractica1"/>
-		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/TBuffer.cpp">
-			<Option target="EDDPractica1"/>
-		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/TBuffer.h">
-			<Option target="EDDPractica1"/>
-		</Unit>
-		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/editor/buffer.h">
 			<Option target="EDDPractica1"/>
 		</Unit>
 		<Unit filename="C:/Users/benav/CLionProjects/EDDPractica1/main.cpp">
